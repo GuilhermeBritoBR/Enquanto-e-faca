@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang="PT-BR">
+        <title>login faca e enquanto</title>
+    </head>
+    <script>
+        function enquanto() {
+    var usuario;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    while (recorrente) {
+        usuario = window.prompt('Enter a value for usuario');
+        senha = window.prompt('Enter a value for senha');
+        if (usuario == "brito") {
+            if (senha == "hornet") {
+                window.alert("Está tudo certo");
+                recorrente = false;
+            } else {
+                window.alert("usuario ou senha errado");
+            }
+        } else {
+            window.alert("usuario ou senha errado");
+        }
+    }
+}
+function faca() {
+    var usuario;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    do {
+        usuario = window.prompt('Enter a value for usuario');
+        senha = window.prompt('Enter a value for senha');
+        if (usuario == "brito") {
+            if (senha == "hornet") {
+                window.alert("Está tudo certo");
+                recorrente = false;
+            } else {
+                window.alert("usuario ou senha errado");
+            }
+        } else {
+            window.alert("usuario ou senha errado");
+        }
+    } while (recorrente);
+}
+</script>
+<body>
+    <button onclick="enquanto()">Enquanto login</button>
+    <button onclick="faca()">Faça login</button>
+
+</body>
+
+</html>
